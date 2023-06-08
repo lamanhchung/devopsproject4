@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![lamanhchung](https://circleci.com/gh/lamanhchung/devopsproject4.svg?style=svg&circle-token=e9e244897a56d472ad8636a5989ec18ff0ffe5f7)](https://circleci.com/gh/circleci/circleci-docs)
 
 ## Project Overview
 
@@ -45,6 +45,20 @@ source .devops/bin/activate
 ### Kubernetes Steps
 
 * Setup and Configure Docker locally
+To install the latest version of docker, choose the Community Edition (CE) for your operating system.
 * Setup and Configure Kubernetes locally
+Install VirtualBox:
+For Mac:
+
+brew cask install virtualbox
+For Windows, I recommend using a Windows host.
+
+Install minikube:
+For Mac:
+brew cask install minikube
+
+For Windows, I recommend using the Windows installer.
+
 * Create Flask app in Container
 * Run via kubectl
+Command: kubectl run ${pod_name} --image=${dockerpath} --port=80
