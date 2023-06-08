@@ -14,7 +14,6 @@ jobs:
 
     steps:
       - checkout
-
       # Download and cache dependencies
       - restore_cache:
         keys:
@@ -42,7 +41,7 @@ jobs:
           ./venv/bin/activate
           make lint 
 
-workflows:
-  default:
-    jobs:
-      - build
+# workflows:
+#   default:
+#     jobs:
+#       - build
