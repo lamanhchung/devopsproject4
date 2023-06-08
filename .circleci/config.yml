@@ -26,12 +26,12 @@ jobs:
           - ./venv
         key: v1-dependencies
 
-      # # run lint!
-      # - run:
-      #   name: run lint
-      #   command: |
-      #     ./venv/bin/activate
-      #     make lint 
+      # run lint!
+      - run:
+        name: run lint
+        command: |
+          ./venv/bin/activate
+          make lint 
 
 workflows:
   default:
