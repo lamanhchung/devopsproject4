@@ -10,7 +10,7 @@ dockerpath=chunglm/housing-prediction
 # Step 2:  
 # Authenticate & tag
 echo "Docker ID and Image: $dockerpath"
-docker login -u chunglm -p dkr@chung19
+docker login -u ${DOCKER_USER} -p ${DOCKER_PASSWORD}
 docker tag housing-prediction ${dockerpath}:latest
 
 # Step 3:
