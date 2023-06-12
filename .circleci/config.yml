@@ -19,6 +19,8 @@ jobs:
           name: install dependencies
           command: |
             python3 -m venv venv
+
+            source ./venv/bin/activate
             make install
       - save_cache:
           paths:
