@@ -1,3 +1,4 @@
+# Portforward output
 root@dataloger-HP:/home/datalogger/Udaproject4/project-ml-microservice-kubernetes# ./run_kubernetes.sh
 Error from server (AlreadyExists): pods "housing-prediction" already exists
 NAME                 READY   STATUS    RESTARTS   AGE     IP           NODE       NOMINATED NODE   READINESS GATES
@@ -5,3 +6,13 @@ housing-prediction   1/1     Running   0          9m57s   10.244.0.9   minikube 
 Forwarding from 127.0.0.1:80 -> 80
 Forwarding from [::1]:80 -> 80
 Handling connection for 80
+
+======================
+# Prediction output
+root@dataloger-HP:/home/datalogger/Udaproject4/project-ml-microservice-kubernetes# ./make_prediction.sh 
+Port: 80
+{
+  "prediction": [
+    20.35373177134412
+  ]
+}
